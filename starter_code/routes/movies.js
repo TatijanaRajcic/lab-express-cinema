@@ -5,7 +5,7 @@ const router  = express.Router();
 // requiring the Movie model is like considering all the entries in our DB that use the Movie model
 // that is, all the movies => Movies 
 
-const Movies = require("../models/Movie.js")
+const Movies = require("../models/Movie")
 
 /* GET movies page */
 router.get("/movies", (req, res, next)=>{
@@ -16,6 +16,9 @@ router.get("/movies", (req, res, next)=>{
     // it's a array of movie objects
     res.render('movies', {movies});
     // {movies} is saying: I want my data to be a variable that I can reuse in my view "index.hbs" (and its partials)
+  })
+  .catch((error) => {
+    console.log(error);
   })
 })
 
