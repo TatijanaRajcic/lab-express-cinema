@@ -5,6 +5,10 @@ html, body {
   padding:0;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 /* INDEX */
 
 .page-container{
@@ -33,11 +37,13 @@ html, body {
 }
 
 #button-index{
-  border-radius: 6px;
+  border-radius: 20px;
+  padding: 2%;
 }
 
 .text-container a {
   text-decoration: none;
+  color: #00B7FF;
 }
 
 /* MOVIES PAGE */
@@ -94,4 +100,8 @@ html, body {
   width: auto;
   position:absolute;
   left:10%;
+}
+
+.star-list {
+  padding:0 15px;
 }

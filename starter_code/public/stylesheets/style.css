@@ -4,6 +4,9 @@ html, body {
   margin: 0;
   padding: 0; }
 
+.bold {
+  font-weight: bold; }
+
 /* INDEX */
 .page-container {
   background-image: url("../images/cinema.jpg");
@@ -28,10 +31,12 @@ html, body {
   font-size: 6em; }
 
 #button-index {
-  border-radius: 6px; }
+  border-radius: 20px;
+  padding: 2%; }
 
 .text-container a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #00B7FF; }
 
 /* MOVIES PAGE */
 .movies-container {
@@ -77,5 +82,8 @@ html, body {
   width: auto;
   position: absolute;
   left: 10%; }
+
+.star-list {
+  padding: 0 15px; }
 
 /*# sourceMappingURL=style.css.map */
