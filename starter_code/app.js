@@ -62,5 +62,8 @@ const movie = require('./routes/movie');
 app.use('/', movie);
 
 
+// Using partials
+hbs.registerPartials(__dirname + '/views/partials');
+
 
 module.exports = app;
